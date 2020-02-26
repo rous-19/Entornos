@@ -1,4 +1,4 @@
-package com.gmq.entornos.demo;
+package com.gmq.entornos.junit;
 
 import java.math.BigDecimal;
 
@@ -21,7 +21,14 @@ public class EnvironmentCalculator implements Calculator {
 
     @Override
     public BigDecimal divide(BigDecimal dividend, BigDecimal divisor) {
-        return null;
+        try {
+            if(BigDecimal.ZERO == divisor) {
+                return BigDecimal.valueOf(-1);
+            }
+            return dividend.divide(divisor);
+        } catch(Exception e) {
+        	return BigDecimal.valueOf(-1);
+        }
     }
 
     @Override

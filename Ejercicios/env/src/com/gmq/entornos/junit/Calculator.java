@@ -1,4 +1,4 @@
-package com.gmq.entornos.demo;
+package com.gmq.entornos.junit;
 
 import java.math.BigDecimal;
 
