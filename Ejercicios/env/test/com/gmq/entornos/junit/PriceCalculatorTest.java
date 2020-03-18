@@ -32,7 +32,8 @@ class PriceCalculatorTest {
 		assertThrows(CalculatePriceException.class, () -> priceCalculator.calculatePrice(productName, quantity));
 	}
 	
-	static Stream<Arguments> calculateProductPrices(){
+	static Stream<Arguments> calculateProductPrices() {
+		
 		return Stream.of(
 				Arguments.of("CAR", 1, 15000),
 				Arguments.of("HOUSE", 10, 350000),

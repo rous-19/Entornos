@@ -1,6 +1,5 @@
 package com.gmq.entornos.refactoring;
 
-import java.util.ArrayList;
 import java.util.List;
 
 public class Refactoring {
@@ -8,6 +7,7 @@ public class Refactoring {
 
 
 	public List<Item> start(List<Item> items) {
+		
         if(items == null || items.size() == 0) {
             Item item1 = new Item();
             item1.name = "Car";
