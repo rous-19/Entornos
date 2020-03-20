@@ -2,8 +2,6 @@ package com.gmq.entornos.refactoring.solution;
 
 import java.util.List;
 
-import com.gmq.entornos.refactoring.Item;
-
 public class Refactoring {
 
 	private final int MEDIUM_QUALITY = 50;
