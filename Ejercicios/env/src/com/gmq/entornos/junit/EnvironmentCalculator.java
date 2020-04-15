@@ -9,21 +9,25 @@ public class EnvironmentCalculator implements Calculator {
 	
     @Override
     public BigDecimal sum(BigDecimal firstSummand, BigDecimal secondSummand) {
-        return null;
+    	
+        return firstSummand.add(secondSummand);
     }
 
     @Override
     public BigDecimal substract(BigDecimal minuend, BigDecimal subtrahend) {
-        return null;
+    	
+        return minuend.subtract(subtrahend);
     }
 
     @Override
     public BigDecimal multiply(BigDecimal multiplicand, BigDecimal multiplier) {
-        return null;
+    	
+        return multiplicand.multiply(multiplier);
     }
 
     @Override
     public BigDecimal divide(BigDecimal dividend, BigDecimal divisor) {
+    	
         try {
             if(BigDecimal.ZERO == divisor) {
                 return BigDecimal.valueOf(-1);

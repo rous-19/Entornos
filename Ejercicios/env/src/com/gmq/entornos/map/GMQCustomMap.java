@@ -3,7 +3,7 @@ package com.gmq.entornos.map;
 import java.util.HashMap;
 import java.util.Map;
 
-public class GQMCustomMap implements CustomMap<Integer, String> {
+public class GMQCustomMap implements CustomMap<Integer, String> {
 
 	private Map<Integer, String> embebbedMap = new HashMap<Integer, String>();
 	
